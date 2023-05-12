@@ -2,7 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<MockeaContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("MockeaContext") ?? throw new InvalidOperationException("Connection string 'MockeaContext' not found.")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
+  );
 
 // Add services to the container.
 
@@ -16,9 +17,11 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+}
+
+// put swagger back in dev?
     app.UseSwagger();
     app.UseSwaggerUI();
-}
 
 app.UseCors(policy =>
 {
