@@ -18,6 +18,7 @@ function App() {
     getData();
   }, [])
 
+  console.log(products);
   return (
     <>
       < Navbar/>
