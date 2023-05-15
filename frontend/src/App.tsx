@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 
-import './App.css'
 import { IProduct } from './interfaces';
 import { getProducts } from './services/mockeaApi';
 import { Navbar } from './components/Navbar/Navbar';
@@ -18,13 +17,12 @@ function App() {
     getData();
   }, [])
 
-  console.log(products);
   return (
     <>
+
       < Navbar/>
-      {import.meta.env.VITE_API_SERVER_URL}
-        {/* <p>{products.map(product => <ProductCard product={product}/>)}</p> */}
-      <Footer />
+      {/* <p>{products.map(product => <ProductCard product={product}/>)}</p> */
+      /* <Footer /> */}
     </>
   )
 }
