@@ -22,6 +22,7 @@ function App() {
   return (
     <>
       < Navbar/>
+      {import.meta.env.VITE_API_SERVER_URL}
         {/* <p>{products.map(product => <ProductCard product={product}/>)}</p> */}
       <Footer />
     </>
