@@ -20,7 +20,7 @@ export const Navbar = () => {
         <div className="flex">
 
           <ul className=" container flex justify-between mx-auto gap-4 py-2 max-h-14 items-center relative ">
-            <button className="flex items-center justify-start absolute flex-col -left-20" onClick={() => showMenu()}>
+            <button className="flex items-center justify-start absolute flex-col -left-20 text-sm" onClick={() => showMenu()}>
               <i className="fa-solid fa-bars rounded-full hover:bg-hovergrey py-5 px-3 fa-lg active:bg-clickgrey"/>
               Menu
             </button>
@@ -33,13 +33,13 @@ export const Navbar = () => {
         </div>
         <ul className="flex mx-auto justify-between border-b w-full container py-2">
           <ul className="flex  gap-8 ">
-            <li className="text-sm"><a href="" className="hover:underline  font-semibold">Products</a></li>
-            <li className="text-sm"><a href="" className="hover:underline font-semibold">All rooms</a></li>
-            <li className="text-sm"><a href="" className="hover:underline font-semibold">Offers</a></li>
+            <li className="text-sm"><a href="" className="hover:underline  font-bold">Products</a></li>
+            <li className="text-sm"><a href="" className="hover:underline font-bold">All rooms</a></li>
+            <li className="text-sm"><a href="" className="hover:underline font-bold">Offers</a></li>
           </ul>
           <ul className="flex  gap-8 ">
-            <li className="text-sm"><a href="" className=" font-semibold">14145</a></li>
-            <li className="text-sm"><a href="" className=" font-semibold">Stockholm Kungens Kurva</a></li>
+            <li className="text-sm"><a href="" className=" font-bold">14145</a></li>
+            <li className="text-sm"><a href="" className=" font-bold">Stockholm Kungens Kurva</a></li>
           </ul>
         </ul>
       </nav>
