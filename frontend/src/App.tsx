@@ -21,8 +21,9 @@ function App() {
     <>
 
       < Navbar/>
-      {/* <p>{products.map(product => <ProductCard product={product}/>)}</p> */
-      /* <Footer /> */}
+      {/* <p>{products.map(product => <ProductCard product={product}/>)}</p> */ }
+      <main className="h-[500px]"></main>
+      <Footer />
     </>
   )
 }
