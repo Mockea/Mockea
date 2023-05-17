@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 
 import { IProduct } from './interfaces';
-import { getProducts } from './services/mockeaApi';
+import { getProducts } from './services/mockeaProductsApi';
 import { Navbar } from './components/Navbar/Navbar';
 import { Footer } from './components/Footer/Footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -11,10 +11,10 @@ import { NotFound } from './pages/NotFound';
 
 function App() {
   const [products, setProducts] = useState<IProduct[]>([]);
-  console.log(products)
+    console.log(products);
 
   const getData =  async () => {
-    return setProducts(await getProducts());
+    setProducts(await getProducts());
   }
 
   useEffect(() => {
@@ -23,17 +23,16 @@ function App() {
 
   return (
     <>
-      <Navbar/>
       <BrowserRouter>
+        <Navbar/>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route index element={<Home/>}/>
           <Route path="CustomerService" element={<ToBeDeveloped />}/>
           <Route path="*" element={<NotFound />}/>
         </Routes>
+        <Footer />
       </BrowserRouter>
-      <main className="h-[500px]"></main>
-      <Footer />
     </>
   )
 }
