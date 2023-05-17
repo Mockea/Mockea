@@ -1,5 +1,4 @@
-import { Box, FormControlLabel, Slide, Switch } from "@mui/material";
-import { useState } from "react";
+import { Box, Slide } from "@mui/material";
 import { SideMenuLinks } from "./SideMenuLinks"
 
 type SideMenuProps = {
