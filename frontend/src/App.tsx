@@ -23,17 +23,16 @@ function App() {
 
   return (
     <>
-      <Navbar/>
       <BrowserRouter>
+        <Navbar/>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route index element={<Home/>}/>
           <Route path="CustomerService" element={<ToBeDeveloped />}/>
           <Route path="*" element={<NotFound />}/>
         </Routes>
+        <Footer />
       </BrowserRouter>
-      <main className="h-[500px]"></main>
-      <Footer />
     </>
   )
 }
