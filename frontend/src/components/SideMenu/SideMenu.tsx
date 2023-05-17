@@ -34,6 +34,7 @@ export const SideMenu = ({setToggleMenu, toggleMenu} : SideMenuProps) => {
     ["MOCKEA Wishlist", ""]
   ]
 
+  if (toggleMenu) { document.body.style.overflow = "hidden"}
   return (
     <>
       {toggleMenu && (<div className="h-screen z-10 w-screen bg-[rgba(0,0,0,.3)] absolute" onClick={() => setToggleMenu(false)}></div>)}
