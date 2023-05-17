@@ -11,7 +11,7 @@ import { NotFound } from './pages/NotFound';
 
 function App() {
   const [products, setProducts] = useState<IProduct[]>([]);
-
+  console.log(products)
 
   const getData =  async () => {
     return setProducts(await getProducts());
@@ -23,7 +23,7 @@ function App() {
 
   return (
     <>
-      < Navbar/>
+      <Navbar/>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home/>}/>

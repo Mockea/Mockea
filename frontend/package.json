@@ -11,7 +11,11 @@
     "scss": "node-sass --watch **/*.scss -o **/*.css"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.13.1",
     "babel-plugin-macros": "^3.1.0",
+    "formik": "^2.2.9",
     "node-sass": "^8.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -27,7 +31,11 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
     "postcss": "^8.4.23",
+<<<<<<< HEAD
     "sass": "^1.62.1",
+=======
+    "react-router-dom": "^6.11.1",
+>>>>>>> main
     "tailwindcss": "^3.3.2",
     "typescript": "^5.0.2",
     "vite": "^4.3.2"
