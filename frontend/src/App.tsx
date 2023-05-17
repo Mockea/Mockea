@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 
 import { IProduct } from './interfaces';
-import { getProducts } from './services/mockeaApi';
+import { getProductsFromApi } from './services/ProductsApi';
 import { Navbar } from './components/Navbar/Navbar';
 import { Footer } from './components/Footer/Footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -10,16 +10,6 @@ import { ToBeDeveloped } from './pages/ToBeDeveloped';
 import { NotFound } from './pages/NotFound';
 
 function App() {
-  const [products, setProducts] = useState<IProduct[]>([]);
-  console.log(products)
-
-  const getData =  async () => {
-    return setProducts(await getProducts());
-  }
-
-  useEffect(() => {
-    getData();
-  }, [])
 
   return (
     <>
