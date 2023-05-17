@@ -11,7 +11,7 @@ import { NotFound } from './pages/NotFound';
 
 function App() {
   const [products, setProducts] = useState<IProduct[]>([]);
-
+  console.log(products)
 
   const getData =  async () => {
     return setProducts(await getProducts());
