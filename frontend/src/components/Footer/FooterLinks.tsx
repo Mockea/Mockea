@@ -4,7 +4,7 @@ type FooterLinksProps = {
 
 export const FooterLinks = ({linksAndText} : FooterLinksProps) => {
   return (
-    <ul className="flex flex-col gap-3 text-start">
+    <ul className="flex flex-col gap-3 text-start text-sm">
         {linksAndText.map(element => {
             if (element[1].toUpperCase() == "TITLE") {
                 return <li className="font-semibold mb-1">{element[0]}</li>

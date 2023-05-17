@@ -4,7 +4,7 @@ export const Footer = () => {
 
 
   const family = [
-    ["YOUR MOCKA family","title"],
+    ["Your MOCKA family","title"],
     ["Logga in", ""],
     ["my shopping list", ""],
     ["Follow my order", ""],
@@ -56,21 +56,20 @@ export const Footer = () => {
 
 
   return (
-    <div className="footer bg-grey py-10 mt-16 pt-16">
-      <div className="container mx-auto text-center">
+    <div className="footer relative bottom-0 bg-grey py-10 mt-20 pt-20">
+      <div className="container mx-auto text-center flex flex-col gap-5">
         <div className="footer-content grid grid-cols-[2fr_1fr_1fr_1fr_1fr]">
-            <ul className="footer__featured-links pe-20 text-start">
+            <ul className="footer__featured-links pe-20 text-start me-16">
                 <li className="px-5 pb-5 flex flex-col gap-5">
                     <h3 className="font-bold">Join the MOCKEA Family</h3>
                     <p className="text-sm">Give your ideas new life with offers,
-                     inspiration and lots of activities in our department stores
-                      - completely free of charge.</p>
-                    <button className="bg-black text-sm text-white rounded-full py-2 px-5">Become a member here</button>
+                     inspiration and lots of activities in our department stores - completely free of charge.</p>
+                    <button className="featured-links__button">Become a member here</button>
                 </li>
-                <li className="m-5">
+                <li className="px-5 pb-5 flex flex-col gap-5">
                     <h3 className="font-bold">MOCKEA for business</h3>
                     <p className="text-sm">Our company experts help with flexible, affordable and more sustainable solutions.</p>
-                    <button className="bg-black text-sm text-white rounded-full py-2 px-5">MOCKEA for business</button>
+                    <button className="featured-links__button">MOCKEA for business</button>
                 </li>
             </ul>
             <FooterLinks linksAndText={family} />
@@ -78,9 +77,39 @@ export const Footer = () => {
             <FooterLinks linksAndText={kundservice} />
             <FooterLinks linksAndText={info} />
         </div>
-        <div className="footer__bottom">
-          <menu className="footer_links"></menu>
-          <ul className="footer__legal"></ul>
+        <div className="footer__bottom flex flex-col gap-5">
+          <div className="flex justify-between items-center">
+            <menu className="footer__links flex gap-6 items-center ">
+              <li><a href=""><i className="fa-brands fa-facebook footer__links-icons"></i></a></li>
+              <li><a href=""><i className="fa-brands fa-instagram footer__links-icons"></i></a></li>
+              <li><a href=""><i className="fa-brands fa-pinterest footer__links-icons"></i></a></li>
+              <li><a href=""><i className="fa-brands fa-youtube footer__links-icons"></i></a></li>
+              <li><a href=""><i className="fa-brands fa-twitter footer__links-icons"></i></a></li>
+              <li><img className="footer__links-square-icons"src="https://www.ikea.com/global/assets/logos/external-payment-providers/visa.svg" alt="visa" /></li>
+              <li><img className="footer__links-square-icons"src="https://www.ikea.com/global/assets/logos/external-payment-providers/master-card.svg" alt="mc" /></li>
+              <li><img className="footer__links-square-icons"src="https://www.ikea.com/global/assets/logos/external-payment-providers/american-express.svg" alt="ax" /></li>
+              <li><img className="footer__links-square-icons"src="https://www.ikea.com/global/assets/logos/external-payment-providers/ikano.svg" alt="ikano" /></li>
+              <li><img className="footer__links-square-icons"src="https://www.ikea.com/global/assets/logos/external-payment-providers/klarna.svg" alt="klarna" /></li>
+              <li><img className="footer__links-square-icons"src="https://www.ikea.com/global/assets/logos/external-payment-providers/swish.svg" alt="swish" /></li>
+              <li><img className="footer__links-square-icons"src="https://www.ikea.com/global/assets/logos/external-payment-providers/bankid.svg" alt="bankid" /></li>
+              <li><img className="footer__links-square-icons"src="https://www.ikea.com/global/assets/logos/external-payment-providers/apple-pay.svg" alt="apple pay" /></li>
+              <li><img className="footer__links-square-icons"src="https://www.ikea.com/global/assets/logos/external-secure-logos/visa-secure.svg" alt="visa secure" /></li>
+              <li><img className="footer__links-square-icons"src="https://www.ikea.com/global/assets/logos/external-secure-logos/master-card-id-check.svg" alt="mc id check" /></li>
+            </menu>
+            <a href="" className="border border-gray-300 hover:border-black rounded-full flex gap-4 items-center px-5 py-1.5"><i className="fa-solid fa-globe fa-lg "></i>Change country</a>
+          </div>
+          <hr></hr>
+          <div className="text-sm footer__legal flex justify-between mt-4">
+            <p> © Inter IKEA Systems B.V. 1999-2023</p>
+            <ul className="flex gap-2">
+              <li><a href="" className="hover:underline">Privacy Policy</a></li>
+              <li><a href="" className="hover:underline">Cookie policy</a></li>
+              <li><a href="" className="hover:underline">Responsible Disclosure Policy</a></li>
+              <li><a href="" className="hover:underline">Settings for Cookies</a></li>
+              <li><a href="" className="hover:underline">Purchase & delivery terms</a></li>
+              <li><a href="" className="hover:underline">Company information</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
