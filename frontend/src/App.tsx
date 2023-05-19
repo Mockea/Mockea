@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from 'react'
 
 import { IProduct } from './interfaces';
-import { getProducts } from './services/mockeaProductsApi';
+import { getProducts } from './services/ReviewsApi';
 import { Navbar } from './components/Navbar/Navbar';
 import { Footer } from './components/Footer/Footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';

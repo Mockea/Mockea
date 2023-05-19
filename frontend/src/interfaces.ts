@@ -1,3 +1,4 @@
+import { StringMappingType } from "typescript"
 
 export interface IProduct {
   productId: number,
@@ -24,4 +25,21 @@ export interface IReview {
   title: string,
   text: string,
   productId: number
+}
+
+
+export interface ICart {
+  cartId: number,
+  productsId: number[]
+}
+
+export interface IUser {
+  userId: number,
+  username: string,
+  email: string,
+  address: IAddress
+}
+
+export interface IAddress {
+  
 }
