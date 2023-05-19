@@ -38,7 +38,7 @@ export const SideMenu = ({setToggleMenu, toggleMenu} : SideMenuProps) => {
   } else {
     document.body.style.overflow = "visible"
   }
-  
+
   return (
     <>
       {toggleMenu && (<div className="h-screen z-10 w-screen bg-[rgba(0,0,0,.3)] absolute" onClick={() => setToggleMenu(false)}></div>)}
@@ -48,7 +48,7 @@ export const SideMenu = ({setToggleMenu, toggleMenu} : SideMenuProps) => {
             <aside className="h-full absolute z-10 bg-white border p-5 grid grid-cols-[1fr_3fr]">
                   <button className="side-menu__cross text-center p-10 max-h-10" ><i className="fa-solid fa-xmark rounded-full hover:bg-hovergrey px-3.5 py-5 fa-lg active:bg-clickgrey" onClick={() => setToggleMenu(false)}></i></button>
                   <div className="side-menu__content p-10">
-                    <img src="src/assets/mockea.PNG" alt="mockeaLogo" className="h-full max-h-10 mb-20" />
+                    <img src="src/assets/mockea.png" alt="mockeaLogo" className="h-full max-h-10 mb-20" />
                     <div className="side-menu__content-links flex flex-col gap-4 mt-6">
                       <ul className="side-menu__content-links--head text-4xl font-bold flex flex-col gap-9">
                         <SideMenuLinks linksAndText={head}/>

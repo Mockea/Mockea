@@ -1,29 +1,27 @@
-import { useContext, useEffect, useState } from 'react'
-
-import { IProduct } from './interfaces';
-import { getProductsFromApi } from './services/ProductsApi';
+// import { useContext} from 'react'
 import { Navbar } from './components/Navbar/Navbar';
 import { Footer } from './components/Footer/Footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { ToBeDeveloped } from './pages/ToBeDeveloped';
 import { NotFound } from './pages/NotFound';
-import { ProductsContext } from './context/ProductsContext';
-import { ProductsContextType } from './types';
+// import { ProductsContext } from './context/ProductsContext';
+// import { ProductsContextType } from './types';
 
 function App() {
 
-  const {products, getProducts} = useContext(ProductsContext) as ProductsContextType;
+  // const {products, fetchProducts} = useContext(ProductsContext) as ProductsContextType;
 
-  useEffect(() => {
-    getProducts();
-  }, [])
+  // useEffect(() => {
+  //   fetchProducts();
+  // }, [])
+  {/* {products.map((product) => <p>{product.name}hi</p>)} */}
+  {console.log(import.meta.env.VITE_SOME_KEY)}
 
   return (
     <>
       <BrowserRouter>
         <Navbar/>
-        {products.map((product) => <p>{product.name}</p>)}
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route index element={<Home/>}/>
