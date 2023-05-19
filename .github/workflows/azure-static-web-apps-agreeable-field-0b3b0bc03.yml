@@ -35,8 +35,6 @@ jobs:
           api_location: "" # Api source code path - optional
           output_location: "dist" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
-          app_install_command: 'npm install --production'
-          app_build_command: 'npm run build --production'
           
 
         
