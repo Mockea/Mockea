@@ -6,7 +6,6 @@ export const getProductsFromApi = async () => {
   if (response.status !== 200) {
     console.log(`Error: ${response.status}: ${response.statusText}.`)
   }
-
   console.log(await response.json());
   return (await response.json()) as IProduct[];
 }
