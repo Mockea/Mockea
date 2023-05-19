@@ -1,4 +1,5 @@
-import { Box, Slide } from "@mui/material";
+import Box from "@mui/material/Box";
+import Slide from "@mui/material/Slide";
 import { SideMenuLinks } from "./SideMenuLinks"
 
 type SideMenuProps = {
@@ -38,7 +39,7 @@ export const SideMenu = ({setToggleMenu, toggleMenu} : SideMenuProps) => {
   } else {
     document.body.style.overflow = "visible"
   }
-  
+
   return (
     <>
       {toggleMenu && (<div className="h-screen z-10 w-screen bg-[rgba(0,0,0,.3)] absolute" onClick={() => setToggleMenu(false)}></div>)}
