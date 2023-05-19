@@ -41,5 +41,10 @@ export interface IUser {
 }
 
 export interface IAddress {
-  
+  addressId: number,
+  streetName: string,
+  streetNo: number,
+  postalCode: number,
+  city: string,
+  country: string
 }
