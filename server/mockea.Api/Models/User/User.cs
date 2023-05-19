@@ -15,4 +15,3 @@ namespace mockea.Api.Models
         public virtual Address? Address {get; set;}
     }
 }
-
