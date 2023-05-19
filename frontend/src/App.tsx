@@ -1,4 +1,7 @@
-// import { useContext} from 'react'
+import { useEffect, useState } from 'react'
+
+import { IProduct } from './interfaces';
+import { getProducts } from './services/mockeaProductsApi';
 import { Navbar } from './components/Navbar/Navbar';
 import { Footer } from './components/Footer/Footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -9,8 +12,12 @@ import { NotFound } from './pages/NotFound';
 // import { ProductsContextType } from './types';
 
 function App() {
+  const [products, setProducts] = useState<IProduct[]>([]);
+    console.log(products);
 
-  // const {products, fetchProducts} = useContext(ProductsContext) as ProductsContextType;
+  const getData =  async () => {
+    setProducts(await getProducts());
+  }
 
   // useEffect(() => {
   //   fetchProducts();
@@ -28,8 +35,8 @@ function App() {
           <Route path="CustomerService" element={<ToBeDeveloped />}/>
           <Route path="*" element={<NotFound />}/>
         </Routes>
+        <Footer />
       </BrowserRouter>
-      <Footer />
     </>
   )
 }
