@@ -23,7 +23,7 @@ export const Navbar = () => {
               <i className="fa-solid fa-bars rounded-full hover:bg-hovergrey py-5 px-3 fa-lg active:bg-clickgrey"/>
               Menu
             </button>
-            <li><Link to="/"><img src="src/assets/mockea.PNG" alt="mockeaLogo" className="h-full max-h-14 py-2.5" /></Link></li>
+            <li><Link to="/"><img src="mockea.PNG" alt="mockeaLogo" className="h-full max-h-14 py-2.5" /></Link></li>
             <li className="flex grow"><Searchbar /></li>
             <li><i className="fa-regular fa-user fa-lg" /></li>
             <li><i className="fa-regular fa-heart fa-lg"/></li>
