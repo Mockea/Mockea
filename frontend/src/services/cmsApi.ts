@@ -1,5 +1,5 @@
 
 export const getCMSData = async () => {
-  const response = await fetch("frontend/src/data.json");
+  const response = await fetch("src/services/data.json");
   return await response.json();
 }

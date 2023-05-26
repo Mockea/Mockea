@@ -6,7 +6,7 @@ type Props = {
 
 export const Main = ( {children} : Props) => {
   return (
-    <div className="container">
+    <div className="container mx-auto my-20">
       {children}
     </div>
   )

@@ -9,18 +9,15 @@ import { CMSDataType } from '../types';
 export const CMSDataContext = createContext({});
 
 export const CMSDataProvider = ( {children} : Props) => {
-  const [CMSData, setCMSData] = useState<CMSDataType>({});
+  const [CMSData, setCMSData] = useState<CMSDataType>(Object);
 
   const fetchCMSData = async () => {
-    setCMSData( await getCMSData());
+    const CMSData =  await getCMSData();
+    setCMSData(CMSData);
   }
 
-  useEffect(() => {
-    fetchCMSData();
-  }, [])
-
   return (
-    <CMSDataContext.Provider value={{CMSData}}>
+    <CMSDataContext.Provider value={{CMSData, fetchCMSData}}>
       {children}
     </CMSDataContext.Provider>
   )

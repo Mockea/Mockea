@@ -1,3 +1,4 @@
+import React, { SetStateAction } from "react"
 
 export type Product = {
   productId: number,
@@ -28,8 +29,26 @@ export type Review = {
 
 export type CMSDataContextType = {
   CMSData: CMSDataType
+  fetchCMSData: () => void
 }
 
 export type CMSDataType = {
-  TrendBoardImages: string[]
+  trendBoardImages: string[][],
+  infoLinks: string[][]
 }
+
+export type asdCMSDataType = string[][]
+
+
+
+// const infoLinks = [
+//   ["This is IKEA" , "title"],
+//   ["Work at IKEA" , ""],
+//   ["IKEA Museum" , ""],
+//   ["Life at home" , ""],
+//   ["IKEA Foundation" , ""],
+//   ["Furnishing tomorrow" , ""],
+//   ["Social responsibility" , ""],
+//   ["About us" , ""],
+//   ["Press room" , ""]
+// ]
