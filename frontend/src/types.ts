@@ -25,3 +25,11 @@ export type Review = {
   text: string,
   productId: number
 }
+
+export type CMSDataContextType = {
+  CMSData: CMSDataType
+}
+
+export type CMSDataType = {
+  TrendBoardImages: string[]
+}

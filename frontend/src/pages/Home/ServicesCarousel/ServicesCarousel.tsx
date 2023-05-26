@@ -21,7 +21,7 @@ export const ServicesCarousel = () => {
   const cards = services?.map(service => <ServiceCard service={service}/>)
 
   return (
-    <div className="overflow-x-auto flex">
+    <div className="overflow-x-auto flex gap-6">
       {cards}
     </div>
   )

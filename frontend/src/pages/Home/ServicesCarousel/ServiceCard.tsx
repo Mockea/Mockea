@@ -12,8 +12,11 @@ export const ServiceCard = ({service} : Props) => {
 
   return (
     <div>
-        <img src={service.image} alt={service.title} />
-        <button>{service.title}</button>
+        
+        <button className="w-60">
+            <img src={service.image} alt={service.title}/>
+            {service.title}
+        </button>
     </div>
     
   )

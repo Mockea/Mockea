@@ -1,14 +1,15 @@
 import React, { createContext, useEffect, useState } from 'react'
 import { getCMSData } from '../services/cmsApi';
+import { CMSDataType } from '../types';
 
  type Props = {
   children: React.ReactNode
  }
 
-const CMSDataContext = createContext({});
+export const CMSDataContext = createContext({});
 
 export const CMSDataProvider = ( {children} : Props) => {
-  const [CMSData, setCMSData] = useState<Object>({});
+  const [CMSData, setCMSData] = useState<CMSDataType>({});
 
   const fetchCMSData = async () => {
     setCMSData( await getCMSData());
