@@ -2,7 +2,7 @@ type FooterLinksProps = {
   linksAndText: string[][]
 }
 
-export const FooterLinks = ({linksAndText} : FooterLinksProps) => {
+export const FooterLinksCard = ({linksAndText} : FooterLinksProps) => {
   return (
     <ul className="flex flex-col gap-3 text-start text-sm">
         {linksAndText.map(element => {
