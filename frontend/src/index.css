@@ -121,8 +121,7 @@ ul{
 }
 
 .trend__image-grid{
-  display: grid;
-  gap: 8px;
+
   grid-template-areas: "first first first second second third third"
                       "first first first second second third third"
                       "first first first fourth fourth third third"
