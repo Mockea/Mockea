@@ -1,17 +1,17 @@
-import { useEffect, useState } from 'react'
-import React from 'react'
-import { IProduct } from './interfaces';
+import { useContext, useEffect, useState } from 'react'
+import { CMSDataContextType, Product } from './types';
 import { getProducts } from './services/mockeaProductsApi';
 import { Navbar } from './components/Navbar/Navbar';
 import { Footer } from './components/Footer/Footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Home } from './pages/Home';
+import { Home } from './pages/Home/Home';
 import { ToBeDeveloped } from './pages/ToBeDeveloped';
 import { NotFound } from './pages/NotFound';
+import { CMSDataContext } from './context/CMSDataProvider';
 
 function App() {
-  const [products, setProducts] = useState<IProduct[]>([]);
-    console.log(products);
+  const [products, setProducts] = useState<Product[]>([]);
+    // console.log(products);
 
   const getData =  async () => {
     setProducts(await getProducts());
