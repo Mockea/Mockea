@@ -1,10 +1,10 @@
 Project made by Luc Siat and Atte Pitkaïnen.
 
-/!\ The website is currently being paused to focus on RepuTech.se. /!\
+<strong> /!\ The website is currently being paused to focus on RepuTech.se. /!\ </strong>
 
 [Deployed app](https://agreeable-field-0b3b0bc03.3.azurestaticapps.net/)
 
-Techstack:
+<strong>Techstack: </strong>
 
 .NET with C#
 Entity Framework
@@ -13,7 +13,7 @@ Github Actions & Project
 Azure Sql DB, Azure web app services & Azure static webpages
 
 
-Tools, Libraries & Languages:
+<strong>Tools, Libraries & Languages:</strong>
 
 Figma & Excalidraw
 HTML/CSS
