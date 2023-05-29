@@ -10,6 +10,8 @@ import { CMSDataContext } from "../../context/CMSDataProvider"
 import { CMSDataContextType } from "../../types"
 import { getCMSData } from "../../services/cmsApi"
 
+const ffUndone = false;
+
 export const Home = () => {
   const {fetchCMSData } = useContext(CMSDataContext) as CMSDataContextType;
 
@@ -24,11 +26,15 @@ export const Home = () => {
   return (
     <Main>
       <TrendBoard />
-      <PopularCategoriesCarousel />
-      <ArticleCarousel />
-      <ServicesCarousel />
-      <CommunityBanner />
-      <InspirationBoard/>
+      { ffUndone && (
+        <>
+          <PopularCategoriesCarousel />
+          <ArticleCarousel />
+          <ServicesCarousel />
+          <CommunityBanner />
+          <InspirationBoard/>
+        </>
+      )}
     </Main>
   )
 }
