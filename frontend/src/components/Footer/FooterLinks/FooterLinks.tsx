@@ -54,9 +54,9 @@ const shopLinks = [
 
 
 export const FooterLinks = () => {
-  
-  const LinksCardsJSX = [familyLinks, shopLinks, customerServiceLinks, infoLinks ].map( data => <FooterLinksCard linksAndText={data} />);
-  
+
+  const LinksCardsJSX = [familyLinks, shopLinks, customerServiceLinks, infoLinks ].map( (data, index) => <FooterLinksCard key={index} linksAndText={data} />);
+
   return (
     <div className="footer-content grid grid-cols-[2fr_1fr_1fr_1fr_1fr]">
       <ul className="footer__featured-links pe-20 text-start me-16">
