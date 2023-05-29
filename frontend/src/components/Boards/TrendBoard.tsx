@@ -1,7 +1,7 @@
 import { useContext, useEffect } from "react";
 import { CMSDataContextType } from "../../types";
 import { CMSDataContext } from "../../context/CMSDataProvider";
-import { Loader } from "../../components/Loader";
+import { Loader } from "../Loader";
 
 
 export const TrendBoard = () => {
@@ -13,7 +13,6 @@ export const TrendBoard = () => {
   useEffect(() => {
     console.log(CMSData.trendBoardImages);
   }, [CMSData])
-  // const trendBoardImagesJSX =
   if (CMSData.trendBoardImages == null) {
     return (
       <Loader />
