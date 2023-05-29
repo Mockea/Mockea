@@ -1,6 +1,8 @@
 
 export const Loader = () => {
   return (
-    <span className="loader absolute m-auto"></span>
+    <div className="w-full h-full flex justify-center items-center">
+      <span className="loader"></span>
+    </div>
   )
 }
