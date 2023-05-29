@@ -11,6 +11,7 @@ namespace mockea.Api.Models
         [Key]
         public int UserId {get; set;}
         public required string Username {get; set;}
+        public required string ImageUrl {get; set;}
         public required string Email {get; set;}
         public virtual Address? Address {get; set;}
     }

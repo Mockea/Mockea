@@ -1,4 +1,5 @@
-import { Box, Slide } from "@mui/material";
+import Box from "@mui/material/Box";
+import Slide from "@mui/material/Slide";
 import { SideMenuLinks } from "./SideMenuLinks"
 
 type SideMenuProps = {
@@ -48,7 +49,11 @@ export const SideMenu = ({setToggleMenu, toggleMenu} : SideMenuProps) => {
             <aside className="h-full absolute z-10 bg-white border p-5 grid grid-cols-[1fr_3fr]">
                   <button className="side-menu__cross text-center p-10 max-h-10" ><i className="fa-solid fa-xmark rounded-full hover:bg-hovergrey px-3.5 py-5 fa-lg active:bg-clickgrey" onClick={() => setToggleMenu(false)}></i></button>
                   <div className="side-menu__content p-10">
+<<<<<<< HEAD
                     <img src="src/assets/mockea.png" alt="mockeaLogo" className="h-full max-h-10 mb-20" />
+=======
+                    <img src="../../dist/mockea.png" alt="mockeaLogo" className="h-full max-h-10 mb-20" />
+>>>>>>> main
                     <div className="side-menu__content-links flex flex-col gap-4 mt-6">
                       <ul className="side-menu__content-links--head text-4xl font-bold flex flex-col gap-9">
                         <SideMenuLinks linksAndText={head}/>

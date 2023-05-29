@@ -132,6 +132,7 @@ namespace mockea.Api.Controllers
         {
           return new Product(){
             Care= request.Care,
+            ImageUrl = request.ImageUrl,
             Color= request.Color,
             Category= _context.Categories.First(category => category.CategoryId == request.CategoryId),
             Description= request.Description,

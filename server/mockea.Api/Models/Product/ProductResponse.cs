@@ -10,6 +10,7 @@ namespace mockea.Api.Models
         public int ProductId {get; set;}
         public required string Name {get; set;}
         public required int Price {get; set; }
+        public required string ImageUrl {get; set;}
         public string? Color {get; set;}
         public string? Description {get; set; }
         public string? Material {get; set; }
