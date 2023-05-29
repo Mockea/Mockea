@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import React from 'react'
+
 import { IProduct } from './interfaces';
 import { getProducts } from './services/mockeaProductsApi';
 import { Navbar } from './components/Navbar/Navbar';

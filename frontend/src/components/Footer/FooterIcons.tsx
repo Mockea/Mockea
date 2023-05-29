@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { FooterSupportedPayments } from './FooterSupportedPayments'
 import { Link } from 'react-router-dom'
 
