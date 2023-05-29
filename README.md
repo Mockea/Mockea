@@ -6,18 +6,28 @@ Project made by Luc Siat and Atte Pitkaïnen.
 
 <strong>Techstack: </strong>
 
-.NET with C#
-Entity Framework
-React with Vite & Typescript
-Github Actions & Project
-Azure Sql DB, Azure web app services & Azure static webpages
+-.NET with C#
+
+-Entity Framework
+
+-React with Vite & Typescript
+
+-Github Actions & Project
+
+-Azure Sql DB, Azure web app services & Azure static webpages
+
+
 
 
 <strong>Tools, Libraries & Languages:</strong>
 
-Figma & Excalidraw
-HTML/CSS
-Some Context:
+-Figma & Excalidraw
+
+-HTML/CSS
+
+
+
+<strong>Some Context:</strong>
 
 
 The aim of the website is to showcase our fullstack skills by making a full scale e-commcerce website. Currently no links are clickable.
