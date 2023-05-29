@@ -1,5 +1,7 @@
 Project made by Luc Siat and Atte Pitkaïnen.
 
+/!\ The website is currently being paused to focus on RepuTech.se. /!\
+
 [Deployed app](https://agreeable-field-0b3b0bc03.3.azurestaticapps.net/)
 
 Techstack:
@@ -17,5 +19,6 @@ Figma & Excalidraw
 HTML/CSS
 Some Context:
 
-The website is currently being paused to focus on RepuTech.se. The aim of the website is to showcase our fullstack skills by making a full scale e-commcerce website. Currently no links are clickable.
+
+The aim of the website is to showcase our fullstack skills by making a full scale e-commcerce website. Currently no links are clickable.
 The backend has currently 5 working controllers and its own working Azure DB.
