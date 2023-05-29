@@ -1,5 +1,5 @@
 import { useContext, useEffect } from "react";
-import { CMSDataContextType, CMSDataType } from "../../types";
+import { CMSDataContextType } from "../../types";
 import { CMSDataContext } from "../../context/CMSDataProvider";
 import { Loader } from "../../components/Loader";
 

@@ -1,4 +1,3 @@
-import React, { SetStateAction } from "react"
 
 export type Product = {
   productId: number,
@@ -37,7 +36,7 @@ export type CMSDataType = {
   infoLinks: string[][]
 }
 
-export type asdCMSDataType = string[][]
+// export type asdCMSDataType = string[][]
 
 
 

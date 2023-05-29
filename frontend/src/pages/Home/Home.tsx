@@ -8,7 +8,6 @@ import { ServicesCarousel } from "./ServicesCarousel/ServicesCarousel"
 import { TrendBoard } from "./TrendBoard"
 import { CMSDataContext } from "../../context/CMSDataProvider"
 import { CMSDataContextType } from "../../types"
-import { getCMSData } from "../../services/cmsApi"
 
 const ffUndone = false;
 
