@@ -1,4 +1,3 @@
-import { StringMappingType } from "typescript"
 
 export interface IProduct {
   productId: number,

@@ -1,4 +1,4 @@
-import { ICategory, IUser } from "../interfaces";
+import { IUser } from "../interfaces";
 
 export const getUsersFromApi = async () => {
   const response =  await fetch(`${import.meta.env.VITE_API_SERVER_URL}/Users`);

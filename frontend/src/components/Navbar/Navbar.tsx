@@ -20,16 +20,11 @@ export const Navbar = () => {
         <div className="flex">
 
           <ul className=" container flex justify-between mx-auto gap-4 py-2 max-h-14 items-center relative ">
-<<<<<<< HEAD
             <button className="flex items-center justify-start absolute flex-col -left-20 text-sm" onClick={() => showMenu()}>
               <i className="fa-solid fa-bars rounded-full hover:bg-hovergrey py-5 px-3 fa-lg active:bg-clickgrey"/>
               Menu
             </button>
             <li><Link to="/"><img src="src/assets/mockea.png" alt="mockeaLogo" className="h-full max-h-14 py-2.5" /></Link></li>
-=======
-            <button className="flex items-center justify-start absolute flex-col -left-20 text-sm" onClick={() => showMenu()}><i className="fa-solid fa-bars rounded-full hover:bg-hovergrey py-5 px-3 fa-lg active:bg-clickgrey"/>Menu</button>
-            <li><Link to="/"><img src={'../../dist/mockea.png'} alt="mockeaLogo" className="h-full max-h-14 py-2.5" /></Link></li>
->>>>>>> main
             <li className="flex grow"><Searchbar /></li>
             <li><Link to="/"><i className="fa-regular fa-user fa-lg" /></Link></li>
             <li><Link to="/"><i className="fa-regular fa-heart fa-lg"/></Link></li>

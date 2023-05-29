@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from 'react'
+import { useContext, useEffect} from 'react'
 // import { Product } from './types';
 // import { getProducts } from './services/mockeaProductsApi';
 import { Navbar } from './components/Navbar/Navbar';
