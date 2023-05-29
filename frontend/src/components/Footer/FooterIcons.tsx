@@ -10,7 +10,7 @@ const footerSocials = [
   ["twitter", ""],
 ]
 
-const FooterSocialsJSX = footerSocials.map(social =>  <li><Link key={social[0]} to=""><i className={`fa-brands fa-${social[0]}  footer__links-icons`}></i></Link></li>)
+const FooterSocialsJSX = footerSocials.map(social =>  <li><Link key={social[0]} to=""><i className={`fa-brands fa-${social} footer__links-icons`}></i></Link></li>)
 
 export const FooterIcons = () => {
   return (
