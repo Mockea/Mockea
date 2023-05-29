@@ -1,4 +1,13 @@
 
+import { IProduct } from "./interfaces";
+
+
+export type ProductsContextType = {
+  products: IProduct[],
+  fetchProducts: () => void,
+  getProduct: (id: number) => IProduct
+}
+
 export type Product = {
   productId: number,
   name: string,
@@ -35,19 +44,3 @@ export type CMSDataType = {
   trendBoardImages: string[][],
   infoLinks: string[][]
 }
-
-// export type asdCMSDataType = string[][]
-
-
-
-// const infoLinks = [
-//   ["This is IKEA" , "title"],
-//   ["Work at IKEA" , ""],
-//   ["IKEA Museum" , ""],
-//   ["Life at home" , ""],
-//   ["IKEA Foundation" , ""],
-//   ["Furnishing tomorrow" , ""],
-//   ["Social responsibility" , ""],
-//   ["About us" , ""],
-//   ["Press room" , ""]
-// ]
