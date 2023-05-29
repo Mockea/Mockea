@@ -4,7 +4,9 @@ Project made by Luc Siat and Atte Pitkaïnen.
 
 [Deployed app](https://agreeable-field-0b3b0bc03.3.azurestaticapps.net/)
 
+<hr/>
 <strong>Techstack: </strong>
+
 
 -.NET with C#
 
@@ -18,7 +20,7 @@ Project made by Luc Siat and Atte Pitkaïnen.
 
 
 
-
+<hr/>
 <strong>Tools, Libraries & Languages:</strong>
 
 -Figma & Excalidraw
@@ -26,7 +28,7 @@ Project made by Luc Siat and Atte Pitkaïnen.
 -HTML/CSS
 
 
-
+<hr/>
 <strong>Some Context:</strong>
 
 
