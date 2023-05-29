@@ -3,6 +3,7 @@ import { Searchbar } from "../searchbar/Searchbar"
 import { SideMenu } from "../SideMenu/SideMenu";
 import { Link } from "react-router-dom";
 import { TopBanner } from "./TopBanner";
+import logo from "../../../public/mockea.png"
 
 export const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState<boolean>(false);
@@ -24,7 +25,7 @@ export const Navbar = () => {
               <i className="fa-solid fa-bars rounded-full hover:bg-hovergrey py-5 px-3 fa-lg active:bg-clickgrey"/>
               Menu
             </button>
-            <li><Link to="/"><img src="src/assets/mockea.png" alt="mockeaLogo" className="h-full max-h-14 py-2.5" /></Link></li>
+            <li><Link to="/"><img src={logo} alt="mockeaLogo" className="h-full max-h-14 py-2.5" /></Link></li>
             <li className="flex grow"><Searchbar /></li>
             <li><Link to="/"><i className="fa-regular fa-user fa-lg" /></Link></li>
             <li><Link to="/"><i className="fa-regular fa-heart fa-lg"/></Link></li>
