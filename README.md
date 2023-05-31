@@ -1,6 +1,6 @@
 Project made by Luc Siat and Atte Pitkaïnen.
 
-<strong> /!\ The website is currently being paused to focus on RepuTech.se. /!\ </strong>
+<strong> /!\ The website is currently being paused to focus on DealFortress.se /!\ </strong>
 
 [Deployed app](https://agreeable-field-0b3b0bc03.3.azurestaticapps.net/)
 
