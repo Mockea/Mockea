@@ -23,8 +23,6 @@ Project made by Luc Siat and Atte Pitkaïnen.
 <hr/>
 <strong>Tools, Libraries & Languages:</strong>
 
--Figma & Excalidraw
-
 -HTML/CSS
 
 
