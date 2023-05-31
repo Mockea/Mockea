@@ -30,5 +30,5 @@ Project made by Luc Siat and Atte Pitkaïnen.
 <strong>Some Context:</strong>
 
 
-The aim of the website is to showcase our fullstack skills by making a full scale e-commcerce website. Currently no links are clickable.
-The backend has currently 5 working controllers and its own working Azure DB.
+The aim of the website is to showcase our fullstack skills by making a full scale e-commcerce website. Making a mock Ikea seemed to be the perfect challenge for us.
+Currently no links are clickable. The backend has currently 5 working controllers and its own working Azure DB.
