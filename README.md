@@ -1,5 +1,6 @@
 Project made by Luc Siat and Atte Pitkaïnen.
 
+### FOR COST REASONS THE DATABASE HAS UNFORTUNATELY BEEN SHUTDOWN.
 <strong> /!\ The website is currently being paused to focus on DealFortress.se /!\ </strong>
 
 [Deployed app](https://agreeable-field-0b3b0bc03.3.azurestaticapps.net/)
