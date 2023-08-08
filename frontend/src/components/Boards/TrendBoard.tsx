@@ -1,5 +1,3 @@
-import { useContext, useEffect } from "react";
-
 
 const trendBoardImages = [
   ["https://www.ikea.com/ext/ingkadam/m/42a9ba82e612d85a/original/PH173386-crop001.jpg?f=xl", ""],
