@@ -1,8 +1,4 @@
 import { useContext, useEffect } from "react";
-import { CMSDataContextType } from "../../types";
-import { CMSDataContext } from "../../context/CMSDataProvider";
-import { Loader } from "../Loader";
-
 
 
 const trendBoardImages = [
@@ -14,19 +10,6 @@ const trendBoardImages = [
 ]
 
 export const TrendBoard = () => {
-
-  // Once clicked does not appear anymore
-
-  // const { CMSData } = useContext(CMSDataContext) as CMSDataContextType;
-
-  // useEffect(() => {
-  //   console.log(CMSData.trendBoardImages);
-  // }, [CMSData])
-  // if (CMSData.trendBoardImages == null) {
-  //   return (
-  //     <Loader />
-  //   )
-  // }
 
   const trendBoardImagesJSX = trendBoardImages.map((imageUrl, index) => <img key={imageUrl[0]} src={imageUrl[0]} className={`grid-area-${index + 1} h-full object-cover`} alt=""/>);
 
