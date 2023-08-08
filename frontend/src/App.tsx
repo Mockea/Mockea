@@ -15,9 +15,9 @@ import { ProductsContextType } from './types';
 function App() {
     const {fetchProducts} = useContext(ProductsContext) as ProductsContextType;
 
-  const getData =  async () => {
-    await fetchProducts();
-  }
+  // const getData =  async () => {
+  //   await fetchProducts();
+  // }
 
   useEffect(() => {
     // fetchProducts();
