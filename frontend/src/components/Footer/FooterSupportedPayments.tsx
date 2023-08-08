@@ -18,7 +18,7 @@ const supportedPaymentJSX = supportedPayment.map(payment =>  <li><img className=
 export const FooterSupportedPayments = () => {
   return (
     <>
-      {supportedPayment}
+      {supportedPaymentJSX}
     </>
   )
 }
