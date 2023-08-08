@@ -21,7 +21,7 @@ function App() {
 
   useEffect(() => {
     // fetchProducts();
-    getData();
+    // getData();
   }, [])
   {/* {products.map((product) => <p>{product.name}hi</p>)} */}
 
